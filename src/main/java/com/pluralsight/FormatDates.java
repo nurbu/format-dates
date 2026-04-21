@@ -8,6 +8,8 @@ public class FormatDates {
         LocalDate today = LocalDate.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
         System.out.println(formatter.format(today));
+        formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        System.out.println(formatter.format(today));
         
     }
 }
