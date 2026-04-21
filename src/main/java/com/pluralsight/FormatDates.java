@@ -1,6 +1,7 @@
 package com.pluralsight;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class FormatDates {
@@ -14,6 +15,9 @@ public class FormatDates {
         int dayOfTheMonth = today.getDayOfMonth();
         int year = today.getYear();
         System.out.println(dayOfTheWeek + ", " + dayOfTheMonth + ", " + year);
+        LocalDateTime now = LocalDateTime.now();
+        formatter = DateTimeFormatter.ofPattern("E, MMM d, yyyy HH:mm");
+        System.out.println(now.format(formatter));
 
     }
 }
