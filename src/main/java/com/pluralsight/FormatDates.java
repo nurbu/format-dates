@@ -10,6 +10,10 @@ public class FormatDates {
         System.out.println(formatter.format(today));
         formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         System.out.println(formatter.format(today));
-        
+        String dayOfTheWeek = today.getDayOfWeek().toString();
+        int dayOfTheMonth = today.getDayOfMonth();
+        int year = today.getYear();
+        System.out.println(dayOfTheWeek + ", " + dayOfTheMonth + ", " + year);
+
     }
 }
